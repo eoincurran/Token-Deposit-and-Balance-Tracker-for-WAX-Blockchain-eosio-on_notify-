@@ -1,0 +1,64 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "balance_record",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "total_balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "transfer_record",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [],
+    "tables": [
+        {
+            "name": "balances",
+            "type": "balance_record",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "transfers",
+            "type": "transfer_record",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
